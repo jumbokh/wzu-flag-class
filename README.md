@@ -14,7 +14,7 @@
 * [Lab04 讓聊天機器人搖頭](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB04.xml)
 * [Lab05a 連接WiFi](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB05a.xml)
 * [Lab05 用瀏覽器遙控機器人](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB05.xml)
-* [Lab06a AI2 操作](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/Lab6a.aia) ## BMI
+* [Lab06a AI2 操作](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB06.aia) ## BMI
 * [Lab06 設計手機遙控App](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB06.aia)
 * [Lab07 跟聊天機器人玩"請你跟我這樣說"](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB07.aia)
 * [Lab08 命令機器人動起來吧!](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB08.aia)
