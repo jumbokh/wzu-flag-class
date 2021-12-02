@@ -25,6 +25,7 @@
 * [AI2 Screen/program](https://github.com/jumbokh/wzu-flag-class/blob/main/AI2.md)
 * [旗標書頁](https://www.flag.com.tw/books/product/FM613A)
 * [AI 聊天機器人手機座 - 組裝教學](https://www.youtube.com/watch?v=MCtpPa-Oyus)
+* [D1 mini](http://www.weiguo.com.tw/d1-mini-esp8266mod.html)
 ### 書附工具下載
 * [http://www.flag.com.tw/download.asp?FM613A](http://www.flag.com.tw/download.asp?FM613A)
 * [Flag Block](https://drive.google.com/file/d/1IN6TQCxMupS5Joc_qbUu1tI5-5Jj1OFv/view?usp=sharing)
