@@ -1,0 +1,253 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="arduino_setup" id="op7M!u{@Ewk/yIoR?!x_" x="0" y="0">
+    <statement name="SETUP_FUNC">
+      <block type="io_digitalwrite_var" id="g6]o.}%cEHItUB/R1mDm">
+        <value name="PIN">
+          <block type="io_allpins" id="e]awqhrdLvWFS8DFZ#Xo">
+            <field name="PIN">D4</field>
+          </block>
+        </value>
+        <value name="STATE">
+          <block type="io_highlow" id="-.n|4G~:z~T:XZ9O|0@^">
+            <field name="STATE">LOW</field>
+          </block>
+        </value>
+        <next>
+          <block type="esp8266_sta_setup" id="s%l1NA|h#b4D`^#O?5L9">
+            <value name="SSID">
+              <block type="text" id="3rVmL+X+YBAJKa*Idh#@">
+                <field name="TEXT">ChatBot</field>
+              </block>
+            </value>
+            <value name="PINCODE">
+              <block type="text" id="-jDm~1TDUwS0M;M%Pw5!">
+                <field name="TEXT">12345678</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_whileUntil" id="63p,?evNU2UzL)0CBim~">
+                <field name="MODE">UNTIL</field>
+                <value name="BOOL">
+                  <block type="esp8266_connected" id="=R0=JDp#/D.Cc/%aVCsl"></block>
+                </value>
+                <statement name="DO">
+                  <block type="time_delay" id="1o]xns`l39I]GGhy9:f1">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="Oq*0m)2xZT{oWGnFMqaC">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="io_digitalwrite_var" id="=/*q1=R:biE8#n{X73~T">
+                    <value name="PIN">
+                      <block type="io_allpins" id="MG!MH#ZBqlRn[)J/J3BQ">
+                        <field name="PIN">D4</field>
+                      </block>
+                    </value>
+                    <value name="STATE">
+                      <block type="io_highlow" id="NoJa+c:qxZH={d3Tozw#">
+                        <field name="STATE">LOW</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_waitUntil" id="-:XYntYxm^64uQ(UW3gh">
+                        <value name="BOOL">
+                          <block type="esp8266_ap_setup" id="h7M!anqyKjl08|Fnl{LE" inline="false">
+                            <field name="CHANNEL">1</field>
+                            <field name="HIDDEN">FALSE</field>
+                            <value name="SSID">
+                              <block type="text_join" id="aOPxJ!+s^-`mr+kH:WjQ">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="=+TBfob0HpD2J?zc.r-C">
+                                    <field name="TEXT">chatbotIP-</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="esp8266_localIP" id="G8K^47rVI.TjoV7kUjY_"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="PINCODE">
+                              <block type="text" id="JL{OkuQ1agELm?SokZzW">
+                                <field name="TEXT"></field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="esp8266_webserver_setup" id="aJF[e(}x#+K1bCpW[rAU">
+                            <field name="PORT">80</field>
+                            <next>
+                              <block type="esp8266_webserver_on2" id="9w+U#W2%qum:D[|Q*vkD">
+                                <field name="FUNCNAME">動作</field>
+                                <field name="PATH">/a</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="*|*+-PLr%1,GIk(*A%ZR" x="0" y="534">
+    <field name="NAME">動作</field>
+    <statement name="STACK">
+      <block type="controls_if" id="B[z5A~Gi96|Bga!W-Kgi">
+        <value name="IF0">
+          <block type="esp8266_webserver_has_arg" id="Dr@,QsuceStIebpWsHSY">
+            <value name="ARGNAME">
+              <block type="text" id="zmSO^%d6ONHym/[g^xhA">
+                <field name="TEXT">a</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="PtZDr,QC%7oE#4t!_!no">
+            <field name="VAR">動作名稱</field>
+            <value name="VALUE">
+              <block type="esp8266_webserver_arg_by_name" id="5_8.4@=Rz+rxQ*LUCy0.">
+                <value name="ARGNAME">
+                  <block type="text" id="O50bo4:P(jvV1N/GAQ/i">
+                    <field name="TEXT">a</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="H/KsG3s/z77`9.};*+b^">
+                <mutation elseif="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="MWE{g.+1@E1/V~ulXd[w">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="5u4r;q`DqdS%.j%YJv.8">
+                        <field name="VAR">動作名稱</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="*^?RHjo`,=yM/Nv!!|!{">
+                        <field name="TEXT">on</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="procedures_callnoreturn" id="o!RY+m9!,Lq-5B;t#T;m">
+                    <mutation name="開燈"></mutation>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="O)L*qLXQlv==ImHLDpKR">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="tCbS*?YJ2Owv+t{EO{dp">
+                        <field name="VAR">動作名稱</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="9#Nq]`Ls~3Q)F8ow{))#">
+                        <field name="TEXT">off</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="procedures_callnoreturn" id="J,!FP]BKd1CPVmeQ5R{L">
+                    <mutation name="關燈"></mutation>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="esp8266_webserver_send" id="96:#j#-Uz42t1Y/0fp%6">
+            <value name="STATUS">
+              <block type="math_number" id="h,H3erZ=bW,bDeFI-N*e">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+            <value name="MIMETYPE">
+              <block type="text" id="o@y(XRxzx*=+}fEcdsrC">
+                <field name="TEXT">text/plain</field>
+              </block>
+            </value>
+            <value name="CONTENT">
+              <block type="text" id=".t)5oCD`PJm;VA.MH6Fa">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="]Kxr;l%@qvr,rW=|H05{" x="0" y="866">
+    <field name="NAME">開燈</field>
+    <statement name="STACK">
+      <block type="io_digitalwrite_var" id="ju%iH-^MHKY~vX-20VFw">
+        <value name="PIN">
+          <block type="io_allpins" id="|5[1jH_Y8xTrxm{W}3j:">
+            <field name="PIN">D4</field>
+          </block>
+        </value>
+        <value name="STATE">
+          <block type="io_highlow" id="8*;ZoNhlLFNci{eY)ZC~">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="#I8CkLArM]i(K3y?@Mz,">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="a#^7f^@w7V5WLa89z}+0">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="arduino_loop" id="EAg)g_/#Sgta~QPPg4@7" deletable="false" x="-2" y="996">
+    <statement name="LOOP_FUNC">
+      <block type="esp8266_webserver_handleclient" id=",Q7s694y-UU[W/`%Yd+k"></block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="[M~]zvV[ZU4(_X0#(Z-W" x="-5" y="1076">
+    <field name="NAME">關燈</field>
+    <statement name="STACK">
+      <block type="io_digitalwrite_var" id="nRv5bel)xn~oVpr8en=J">
+        <value name="PIN">
+          <block type="io_allpins" id="eR{K`-Xi:xIZ%|L6vsVb">
+            <field name="PIN">D4</field>
+          </block>
+        </value>
+        <value name="STATE">
+          <block type="io_highlow" id="H:pjwny^+KNTM#GJZ/``">
+            <field name="STATE">LOW</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="EL/-Qw*#8{7CaLx@jbu@">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="=(S(Br[UpYL_A!NxhSO_">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
