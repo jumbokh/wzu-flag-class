@@ -23,6 +23,7 @@
 * [Lab11](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB11.xml)
 ### 參考
 * [AI2 Screen/program](https://github.com/jumbokh/wzu-flag-class/blob/main/AI2.md)
+* [旗標書頁](https://www.flag.com.tw/books/product/FM613A)
 ### 書附工具下載
 * [http://www.flag.com.tw/download.asp?FM613A](http://www.flag.com.tw/download.asp?FM613A)
 * [Flag Block](https://drive.google.com/file/d/1IN6TQCxMupS5Joc_qbUu1tI5-5Jj1OFv/view?usp=sharing)
