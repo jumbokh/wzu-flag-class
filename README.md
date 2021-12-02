@@ -12,7 +12,7 @@
 * [Lab02 D1mini LED燈閃爍](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/Lab02.xml)
 * [Lab03 讓聊天機器人點頭](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB03.xml)
 * [Lab04 讓聊天機器人搖頭](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB04.xml)
-* [Lab05a 連接WiFi]()
+* [Lab05a 連接WiFi](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB05a.xml)
 * [Lab05 用瀏覽器遙控機器人](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB05.xml)
 * [Lab06a AI2 操作]()
 * [Lab06 設計手機遙控App](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB06.aia)
