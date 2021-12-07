@@ -1,0 +1,212 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="arduino_setup" id="s7S}]Q,+Hk1-#aIQ:%-|" x="8" y="23">
+    <statement name="SETUP_FUNC">
+      <block type="servo_use" id="){woLIVlsqIii%e[{zv7">
+        <field name="OBJNAME">UD</field>
+        <field name="PIN">D4</field>
+        <next>
+          <block type="servo_put" id="?)QLKKKJjB)d2kC?#1]g">
+            <field name="OBJNAME">UD</field>
+            <value name="SERVO_ANGLE">
+              <block type="math_number" id="R;W2]`i?N7Zny)Z2N4Lb">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <next>
+              <block type="servo_use" id="g+r3Cnp)F}Z+UuWpS@xD">
+                <field name="OBJNAME">LR</field>
+                <field name="PIN">D2</field>
+                <next>
+                  <block type="servo_put" id="@s[_MXKWyj7T{O-](E_Z">
+                    <field name="OBJNAME">LR</field>
+                    <value name="SERVO_ANGLE">
+                      <block type="math_number" id="#l!z)NtHev`=]#,0Su%F">
+                        <field name="NUM">65</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="arduino_loop" id="EAg)g_/#Sgta~QPPg4@7" deletable="false" x="396" y="25">
+    <statement name="LOOP_FUNC">
+      <block type="controls_for" id="EvAdJD[E20/pxB7+ei]+">
+        <field name="VAR">deg</field>
+        <value name="FROM">
+          <block type="math_number" id=".8}Ad@S31wKEuXs#DmLo">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="math_number" id="]K{*s+U4|C6-(?n/k(0*">
+            <field name="NUM">65</field>
+          </block>
+        </value>
+        <value name="BY">
+          <block type="math_number" id="Q?40M*kE+6dr=rk}2B.f">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="servo_put" id="U~pg2h#7?b~)iC8UkU7.">
+            <field name="OBJNAME">UD</field>
+            <value name="SERVO_ANGLE">
+              <block type="variables_get" id="gPECa_BU,Nio{:YP]nzk">
+                <field name="VAR">deg</field>
+              </block>
+            </value>
+            <next>
+              <block type="time_delay" id=":BJ+8qrF})lbIvC+G`=-">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="]MyIR-:RLc%]L5KCpp||">
+                    <field name="NUM">300</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_for" id="eX1SqLjZZPETGOwRiwSQ">
+            <field name="VAR">deg</field>
+            <value name="FROM">
+              <block type="math_number" id="QUY1#.w_Z!|+)AazhgF@">
+                <field name="NUM">65</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="hg0j%|t?)]Z=@qMD!X@|">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="{Moc+Tf)v?0br?oHPSnH">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="servo_put" id="EfRH^.0=C.|o|I@8`I+4">
+                <field name="OBJNAME">UD</field>
+                <value name="SERVO_ANGLE">
+                  <block type="variables_get" id="tQ-+^w/8_MqI(U=]Ve@f">
+                    <field name="VAR">deg</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="B,DQ/)?`~lfzuGK:`PHD">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="9Ltlb~]5m_%Nih8(=CM;">
+                        <field name="NUM">300</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="time_delay" id="y6jEX`Gv=2G275[n:xOo">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="e2n#H1cy~qsvn5@sr1ca">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="u8lwZ74ze?y#XQooi+B9">
+                    <field name="VAR">deg</field>
+                    <value name="FROM">
+                      <block type="math_number" id="y]`wIywJ95Yy1yA}k#up">
+                        <field name="NUM">35</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="`nbd41Qz={b/M9*73=zl">
+                        <field name="NUM">95</field>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <block type="math_number" id="8)ojft|KD*QMAQX]^:IV">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="servo_put" id="3/8iau:-Rp^Pts[)EGDa">
+                        <field name="OBJNAME">LR</field>
+                        <value name="SERVO_ANGLE">
+                          <block type="variables_get" id="yO:za9roJLB?tXF:=fn9">
+                            <field name="VAR">deg</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="{ZRhIZiq/_a!9ZBi81i4">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="Ez}P5n;LRhGBi.zS1[#F">
+                                <field name="NUM">300</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_for" id="jKWm?mQc12Ywr8]d(2}4">
+                        <field name="VAR">deg</field>
+                        <value name="FROM">
+                          <block type="math_number" id="(LFdZW,]|+Tl_`c!a8i.">
+                            <field name="NUM">95</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id="GZJ@92J]Y7(GN=2],MGW">
+                            <field name="NUM">35</field>
+                          </block>
+                        </value>
+                        <value name="BY">
+                          <block type="math_number" id="KXgeymsM%31}.Q;de6]O">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="servo_put" id="822IbZ-(851N3`6?8UK^">
+                            <field name="OBJNAME">LR</field>
+                            <value name="SERVO_ANGLE">
+                              <block type="variables_get" id="MVCLm51ohk7#6OQ:E3/H">
+                                <field name="VAR">deg</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="time_delay" id="ek60V3A#[pE^Y.i4meOT">
+                                <value name="DELAY_TIME_MILI">
+                                  <block type="math_number" id="%#3DUhIXhDHKVA2*,T2L">
+                                    <field name="NUM">300</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="time_delay" id="~#o|;ey9y90R:jIUFH=p">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="1}sXr;mXiXj#RT87cOii">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

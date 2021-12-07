@@ -1,0 +1,37 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="arduino_setup" id="qBqEQeTDH[L`/Vr|8-WE" x="286" y="-9">
+    <statement name="SETUP_FUNC">
+      <block type="servo_use" id="HKuo#LQQO;Xs{rkVaa#M">
+        <field name="OBJNAME">UD</field>
+        <field name="PIN">D4</field>
+        <next>
+          <block type="servo_use" id="I0.1Y#gegJ?`|NncgOq:">
+            <field name="OBJNAME">LR</field>
+            <field name="PIN">D2</field>
+            <next>
+              <block type="servo_put" id="|!SGdFe,a[_5.mg6eC=I">
+                <field name="OBJNAME">UD</field>
+                <value name="SERVO_ANGLE">
+                  <block type="math_number" id="Fyv8dA!.}_h.3!KijjVF">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="servo_put" id="~EbOHo_vR4S9iV,Ol)bD">
+                    <field name="OBJNAME">LR</field>
+                    <value name="SERVO_ANGLE">
+                      <block type="math_number" id="vV7,4!~+tsHcN@7hJaxg">
+                        <field name="NUM">50</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="arduino_loop" id="EAg)g_/#Sgta~QPPg4@7" deletable="false" x="281" y="257"></block>
+</xml>
