@@ -26,6 +26,7 @@
 * [旗標書頁](https://www.flag.com.tw/books/product/FM613A)
 * [AI 聊天機器人手機座 - 組裝教學](https://www.youtube.com/watch?v=MCtpPa-Oyus)
 * [D1 mini](http://www.weiguo.com.tw/d1-mini-esp8266mod.html)
+* [建立WhatsApp或LINE聊天機器人](https://www.infobip.com/tw/c/build-your-whatsapp-business-chatbot?utm_medium=paid%20social&utm_source=facebook&utm_campaign=act%20--%20fb%20--%20lead%20generation-web%20--%20answers%20--%20apac%20north%20--%20taiwan&utm_term=answers%20--%20chinese-t%20--%20mix%20--%20interests%20--%20apac%20north%20--%20taiwan&utm_content=video-ad%20--%20did-you-know%20--%20chinese-t%20--%20Facebook_Desktop_Feed&fbclid=IwAR0x6W17aFvQjkEFATNnIPljOn_udTq7VeQ_l3qemoyNgPOm15Quonr1fBM)
 ### 書附工具下載
 * [http://www.flag.com.tw/download.asp?FM613A](http://www.flag.com.tw/download.asp?FM613A)
 * [Flag Block](https://drive.google.com/file/d/1IN6TQCxMupS5Joc_qbUu1tI5-5Jj1OFv/view?usp=sharing)
