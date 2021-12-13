@@ -9,6 +9,7 @@
 * 5. 機器學習與強化學習
 ##
 ### Labs
+* [Lab01 開始聊天](https://github.com/jumbokh/wzu-flag-class/blob/main/docs/Lab1.md)
 * [Lab02 D1mini LED燈閃爍](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/Lab02.xml)
 * [Lab03 讓聊天機器人點頭](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB03.xml)
 * [Lab04 讓聊天機器人搖頭](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB04.xml)
