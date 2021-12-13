@@ -21,6 +21,7 @@
 * [Lab09 網路爬蟲](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB09.aia)
 * [Lab10 讓聊天機器人當你的語音助理](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB10.aia) ##機器學習與強化學習
 * [Lab11](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB11.xml)
+* ![d1mini](https://github.com/jumbokh/wzu-flag-class/blob/main/images/FlagD1MiniRobot_bb.jpg)
 ### 參考
 * [AI2 Screen/program](https://github.com/jumbokh/wzu-flag-class/blob/main/AI2.md)
 * [旗標書頁](https://www.flag.com.tw/books/product/FM613A)
