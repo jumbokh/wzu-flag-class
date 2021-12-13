@@ -22,6 +22,7 @@
 * [Lab10 讓聊天機器人當你的語音助理](https://github.com/jumbokh/wzu-flag-class/blob/main/src/AI2/LAB10.aia) ##機器學習與強化學習
 * [Lab11](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB11.xml)
 * ![d1mini](https://github.com/jumbokh/wzu-flag-class/blob/main/images/FlagD1MiniRobot_bb.jpg)
+* [馬達測試](https://github.com/jumbokh/wzu-flag-class/blob/main/src/Labs/LAB-sg90Home.xml)
 ### 參考
 * [AI2 Screen/program](https://github.com/jumbokh/wzu-flag-class/blob/main/AI2.md)
 * [旗標書頁](https://www.flag.com.tw/books/product/FM613A)
