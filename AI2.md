@@ -1,5 +1,5 @@
 ### AI2 Screen & Program
-#### DB Tutorial
+#### DB Tutorial reference: [用微型資料庫來儲存姓名](https://book.whsh.tc.edu.tw/books/app-inventor-2%E6%95%99%E5%AD%B8/page/app-inventor-2%E7%B7%B4%E7%BF%92%EF%BC%9A%E5%BE%AE%E5%9E%8B%E8%B3%87%E6%96%99%E5%BA%AB%28tinydb%29)
 * ![DB1](https://github.com/jumbokh/wzu-flag-class/blob/main/images/db1.JPG)
 * ![DB1 program](https://github.com/jumbokh/wzu-flag-class/blob/main/images/DB1p.JPG)
 #### Lab06a BMI
