@@ -1,4 +1,7 @@
 ### AI2 Screen & Program
+#### DB Tutorial
+* ![DB1](https://github.com/jumbokh/wzu-flag-class/blob/main/images/db1.JPG)
+* ![DB1 program](https://github.com/jumbokh/wzu-flag-class/blob/main/images/db1p.JPG)
 #### Lab06a BMI
 * ![Lab06a](https://github.com/jumbokh/wzu-flag-class/blob/main/images/Lab06a.JPG)
 * ![Lab06a-program](https://github.com/jumbokh/wzu-flag-class/blob/main/images/Lab06a-prog.JPG)
